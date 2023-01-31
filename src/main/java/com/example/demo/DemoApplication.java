@@ -17,10 +17,10 @@ public class DemoApplication {
 private static final String p = "123456"; // hard-coded credential
 
 public static void main(String[] args) throws SQLException {SpringApplication.run(DemoApplication.class, args);
-    String url = "jdbc:mysql://localhost/test";
-    String u = "admin"; // hard-coded credential
+    String id = "jdbc:mysql://localhost/test";
+    String password = "admin"; // hard-coded credential
 
-    getConn(url, u, p);
+    getConn(id, password, p);
 }
 @GetMapping("/api")
 public static void getConn(String url, String v, String q) throws SQLException {
